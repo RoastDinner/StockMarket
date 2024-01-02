@@ -8,31 +8,53 @@ void sleep(int sleep){
 
 }
 
-void order(int uOrder){
+void uOrder(){
+    int uOrder; 
     cout << "Enter Order Amount: ";
     cin >> uOrder;
+    cout << uOrder;
 }
 
-bool uChoise(){
-    string uChoise;
-    cout << "Do you want to do anything y/n:  ";
-    cin >> uChoise;
-    return uChoise == "y";
+bool uChoice(){
+    char choice;
+    cout << "Do you want to view the market(enter m) or view trades from others(v) or trade(t)";
+    cin >> choice;
+    
+    return choice;
+  
+}   
+
+double Price(){
+    
+    cout << Price;
+
+
+
 }
 
 int main(){
-    
-    
     double uBalance;
     double uOrder;
     double PriceChange;
     double rTraders;
     double rOrder;
+    double Price;
+    Price = 100;
+    
+    switch (uChoice())
+    {
+    case 'm':
+        
+        break;
+    case 'v':
 
-    cout << uChoise();
 
+    default:
+        break;
+    }
 
-}
+    }
+
 
 
 
